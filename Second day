@@ -232,4 +232,187 @@ class Calculator{
         
         
     }
+    
+    
+    
+    
+    
 }
+
+
+
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static void main(String[] args) {
+        for(int i=0;i<=10;i++){
+        System.out.println(  i  );}
+    }
+}
+
+
+
+
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static void main(String[] args) {
+      int i=0;
+       while(i<=10)
+       {
+          System.out.println(i);
+           i++;
+       }
+    }
+}
+
+
+
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static void main(String[] args) {
+      int i=0;
+      do{
+          System.out.println(i);
+          i++;
+          
+      }
+      while(i<=11);
+    }}
+    
+    
+    ////multiply table
+    // Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+      int mul=0;
+      Scanner sc = new Scanner(System.in);
+      int n =  sc.nextInt();
+      for(int i=1;i<=10;i++)
+      {
+          mul=i*n;
+          System.out.println(mul);
+      }
+     
+    }}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    import java.util.Scanner;
+
+class Second {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        for (int i = 0; i <= n; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+
+        sc.close(); // Close the Scanner when finished to release resources
+    }
+}
+
+
+
+
+
+
+
+
+//menu driven pg to cal student malrs
+import java.util.Scanner;
+
+public class MarksProgram {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int choice;
+
+        do {
+            System.out.println("Menu:");
+            System.out.println("1. Enter student's marks");
+            System.out.println("0. Exit");
+            System.out.print("Enter your choice: ");
+            choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter student's marks (out of 100): ");
+                    int marks = scanner.nextInt();
+                    evaluateMarks(marks);
+                    break;
+                case 0:
+                    System.out.println("Exiting the program...");
+                    break;
+                default:
+                    System.out.println("Invalid choice! Please try again.");
+            }
+            System.out.println();
+        } while (choice != 0);
+
+        scanner.close(); // Close the Scanner when finished to release resources
+    }
+
+    public static void evaluateMarks(int marks) {
+        if (marks >= 90) {
+            System.out.println("This is Good");
+        } else if (marks >= 60) {
+            System.out.println("This is also Good");
+        } else if (marks >= 0) {
+            System.out.println("This is Good as well");
+        } else {
+            System.out.println("Invalid marks! Marks should be between 0 and 100.");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+//hollow rectangle
+import java.util.*;
+class Pattern{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+       // int n = sc.nextInt();
+      int n=4;
+       int m=5;
+       for( int i=1;i<=n;i++)
+       {
+           for( int j=1;j<=m;j++)
+           {
+               if(i==1 || j==1 || i==n || j==m)
+               {
+                   System.out.print("*");
+               }
+               else{ System.out.print(" ");}
+           }
+           System.out.println();
+       }
+    }}
