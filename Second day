@@ -131,6 +131,46 @@ class main{
 }
 
 
+//Calculator
+import java.util.*;
+class Calculator{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println("Enter Operations...!");
+        
+        System.out.println("Press 1 for sum, 2 for substrraction ,3 for multiplicaation, 4 for divide, and 5 for moduls");
+        int res = sc.nextInt();
+        
+        //int sum,sub,mul,div,mod;
+        switch(res)
+        {
+            case 1:
+                System.out.println(a+b);
+            break;
+            case 2:
+                System.out.println(a-b);
+            break;
+            case 3:
+                System.out.println(a*b);
+            break;
+            case 4:
+                System.out.println(a/b);
+            break;
+            case 5:
+                System.out.println(a%b);
+            break;
+            default:
+                System.out.println("Invalid Choice!!");
+        }
+        
+        
+    }
+}
+
+
 
 
 
