@@ -1,1 +1,79 @@
 
+//Basic function example
+
+import java.util.*;
+public class F
+{
+    public static void PrintMyName(String name)
+    {
+        System.out.println(name);
+        return;
+    }
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+       String name=sc.next();
+    
+    PrintMyName(name);
+}
+}
+
+
+
+//sum of new number
+import java.util.*;
+public class main {
+    public static int Hlo(int a,int b) {
+        int sum=a+b;
+        return sum;
+    }
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int sum=Hlo(a,b);
+        System.out.print(sum);
+
+    }
+}
+
+
+//prodyuct 
+import java.util.*;
+public class main {
+    public static int Hlo(int a,int b) {
+        int mul=a*b;
+        return a*b;
+    }
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int mul=Hlo(a,b);
+        System.out.print("Product"+Hlo(a,b));
+
+    }
+}
+
+//factorial
+import java.util.*;
+public class main {
+    public static void Fact(int n) {
+        if(n<0) {
+            System.out.println("invalid");
+            return;
+        }
+        int f=1;
+
+        for(int i=n; i>=1; i--) {
+            f=f*i;
+        }
+        System.out.println(f);
+        return;
+    }
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        Fact(n);
+    }
+}
