@@ -45,3 +45,50 @@ class HelloWorld {
    }
    
 }
+//curcumfrn
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class HelloWorld {
+   public static void Cal(int r)
+   {
+      double res = 2*3.14*r;
+     System.out.println("circumfrnce is : - "+res);
+   }
+   public static void main(String args[])
+   {
+       Scanner sc = new Scanner(System.in);
+       int r = sc.nextInt();
+       
+       Cal(r);
+       
+   }
+   
+}
+
+
+///age less than 18 or gteate
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class HelloWorld {
+   public static void Cal(int age)
+   {
+     if(age>18){
+     System.out.println("Yes Ur Eligible Your age is : - "+age);
+   }
+   else
+   {
+       System.out.println("Sorry,Not eligible ur age is: - "+age);
+   }
+   }
+   public static void main(String args[])
+   {
+       Scanner sc = new Scanner(System.in);
+       int age = sc.nextInt();
+       
+       Cal(age);
+       
+   }
+   
+}
