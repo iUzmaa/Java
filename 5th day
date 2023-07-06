@@ -1,5 +1,5 @@
 average of threee numbers using function 
-import java.util.*;
+import java.util.*; 
  public class Main{
     public static int Cal(int a,int b,int c)
     {
